@@ -93,7 +93,7 @@ nav {
 }
 
 .nav-container .contact-btn a {
-  color: white;
+  color: rgb(0, 0, 0);
   transition: 0.3s linear;
 }
 
