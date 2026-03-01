@@ -8,7 +8,7 @@
 }
 
 html {
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +21,9 @@ body {
 nav {
   width: 100%;
   height: 10vh;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 
 .nav-container {
@@ -248,6 +250,50 @@ section {
   box-shadow: 0 0 40px rgb(109, 67, 0);
 }
 
+#academic-activities {
+  margin: 30px 0;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 10; /* Menyusun elemen ini agar berada di atas */
+}
+
+#academic-activities img {
+  position: flex;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: auto;
+}
+
+#academic-activities h2 {
+  font-size: 2rem;
+  color: rgb(109, 67, 0);
+  text-shadow: 0 0 10px rgb(109, 67, 0);
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.workshop-content {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.workshop-content p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.workshop-content img {
+  width: 80%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(109, 67, 0); /* Menambahkan border pada gambar */
+  padding: 10px;
+}
+
 @media (max-width: 884px) {
   body {
     overflow-y: visible;
@@ -283,6 +329,7 @@ section {
     height: 2.5rem;
     font-size: 1.5rem;
   }
+
   .cancel {
     color: white;
   }
