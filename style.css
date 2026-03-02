@@ -259,7 +259,7 @@ section {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -279,14 +279,19 @@ section {
 }
 
 /* Styling untuk Section Academic Activities */
-#academic-activities {
+#international-conference {
   text-align: center;
   padding: 20px;
   position: relative;
-  z-index: 10; /* Menyusun elemen ini agar berada di atas */
 }
 
-#academic-activities img {
+#workshop {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+#workshop img {
   position: flex;
   top: 50%;
   left: 0;
@@ -294,8 +299,16 @@ section {
   height: auto;
 }
 
-#academic-activities h2 {
-  font-size: 2rem;
+#international-conference h3 {
+  font-size: 1.5rem;
+  color: rgb(109, 67, 0);
+  text-shadow: 0 0 10px rgb(109, 67, 0);
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+#workshop h3 {
+  font-size: 1.5rem;
   color: rgb(109, 67, 0);
   text-shadow: 0 0 10px rgb(109, 67, 0);
   margin-bottom: 1rem;
@@ -325,14 +338,6 @@ section {
   border-radius: 10px;
   border: 2px solid rgb(109, 67, 0); /* Menambahkan border pada gambar */
   padding: 10px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 884px) {
-  .dropdown-content {
-    width: 100%;
-    position: relative;
-  }
 }
 
 @media (max-width: 884px) {
