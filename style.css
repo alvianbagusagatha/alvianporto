@@ -287,7 +287,7 @@ section {
 
 #workshop {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   position: relative;
 }
 
@@ -340,6 +340,67 @@ section {
   padding: 10px;
 }
 
+/* Styling untuk Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Styling untuk setiap card */
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h4 {
+  font-size: 1.5rem;
+  color: rgb(109, 67, 0);
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card-content a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: rgb(109, 67, 0);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-content a:hover {
+  background-color: #b74b4b;
+}
+
 @media (max-width: 884px) {
   body {
     overflow-y: visible;
@@ -383,5 +444,13 @@ section {
   .main-container .image {
     width: 80%;
     margin-bottom: 0px;
+  }
+
+  .card-container {
+    justify-content: space-between;
+  }
+  .card {
+    width: 100%;
+    max-width: 280px;
   }
 }
